@@ -1,0 +1,33 @@
+HOW TO UNFUCK OSX
+
+
+Setup proper environment similar to Linux:
+1) Install iTerm2
+2) Install homebrew - follow the guide in here: https://brew.sh/
+3) Install basic packages: brew install bash coreutils gsed mc
+4) Set up your .bash_profile (check the file in this repo for inspiration or as a default). BEWARE, macos doesn't use .bashrc, you need to use .bash_profile
+5) Set Bash from Homebrew as your default shell:
+  - sudo sh -c 'echo /opt/homebrew/bin/bash >> /etc/shells'
+  - chsh -s /opt/homebrew/bin/bash
+6) Setup your gitconfig, i.e.
+```.gitconfig
+[user]
+	email = stefan.safar@nbcuni.com
+	name = Stefan Safar
+[core]
+	excludesfile = /Users/ssr80/.gitignore_global
+[includeIf "gitdir:/Users/ssr80/git/sky/"]
+	path = /Users/ssr80/.gitconfig-sky
+[includeIf "gitdir:/Users/ssr80/git/nbcu/"]
+	path = /Users/ssr80/.gitconfig-nbcu
+[push]
+	autoSetupRemote = true
+```
+
+```.gitconfig-sky
+[user]
+	name = Stefan Safar
+	email = stefan.safar@sky.uk
+[core]
+	sshCommand = ssh -i /Users/ssr80/.ssh/id_ed25519_sky_git -o IdentitiesOnly=yes
+```
