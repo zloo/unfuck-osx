@@ -1,5 +1,10 @@
 HOW TO UNFUCK OSX
 
+Unfuck Keyboard:
+1) Set function keys as default instead of the stupid bullshit keys https://support.apple.com/en-us/102439
+2) Use English ABC layout for english keyboard, all the others are fucked beyong repair
+   - Use Karabiner - https://karabiner-elements.pqrs.org/ - to fix the backtick/tilde key to actually type backtick/tilde. For this download predefined rule "Remap section sign from British Keyboard to US's backtick + plusminus to tilde"
+
 
 Setup proper environment similar to Linux:
 1) Install iTerm2
