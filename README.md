@@ -6,6 +6,10 @@ Unfuck Keyboard:
    - Use Karabiner - https://karabiner-elements.pqrs.org/ - to fix the backtick/tilde key to actually type backtick/tilde. For this download predefined rule "Remap section sign from British Keyboard to US's backtick + plusminus to tilde"
 
 
+Unfuck Touchpad:
+1) Enable "touch to click" so you won't have to push through the touchpad for every click: Apple logo in top left corner, system settings, trackpad, enable Tap to click
+
+
 Setup proper environment similar to Linux:
 1) Install iTerm2
 2) Install homebrew - follow the guide in here: https://brew.sh/
