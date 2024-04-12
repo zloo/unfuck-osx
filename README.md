@@ -4,7 +4,8 @@ Unfuck Keyboard:
 1) Set function keys as default instead of the stupid bullshit keys https://support.apple.com/en-us/102439
 2) Use English ABC layout for english keyboard, all the others are fucked beyong repair
    - Use Karabiner - https://karabiner-elements.pqrs.org/ - to fix the backtick/tilde key to actually type backtick/tilde. For this download predefined rule "Remap section sign from British Keyboard to US's backtick + plusminus to tilde"
-
+3) Install PC-Style shortcuts to Karabiner Elements: https://ke-complex-modifications.pqrs.org/?q=home%20end
+   - You can then selectively enable/disable these modifications. It makes HOME/END do beginning/end of line, like a normal OS.
 
 Unfuck Touchpad:
 1) Enable "touch to click" so you won't have to push through the touchpad for every click: Apple logo in top left corner, system settings, trackpad, enable Tap to click
