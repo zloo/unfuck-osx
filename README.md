@@ -10,6 +10,14 @@ Unfuck Keyboard:
 Unfuck Touchpad:
 1) Enable "touch to click" so you won't have to push through the touchpad for every click: Apple logo in top left corner, system settings, trackpad, enable Tap to click
 
+Unfuck mice:
+1) There's a tool for that: https://github.com/ther0n/unnaturalscrollwheels - it allows:
+  - Inverting horizontal/vertical scrolling
+  - Disabling scroll acceleration
+  - Disabling mouse acceleration (this was DRIVING ME INSANE)
+
+Turn off the fucked startup sound:
+1) Click apple icon, System Settings, Sound, Play sound on Startup
 
 Setup proper environment similar to Linux:
 1) Install iTerm2
