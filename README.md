@@ -21,6 +21,7 @@ Turn off the fucked startup sound:
 
 Setup proper environment similar to Linux:
 1) Install iTerm2
+  - Configure the Iterm2 / Settings / General / Closing / Quit when all windows are closed. This will close the iTerm2 application so that when you close all the terminal windows, the application will no longer appear in the alt-tab menu option which does NOTHING when you pick it.
 2) Install homebrew - follow the guide in here: https://brew.sh/
 3) Install basic packages: brew install bash coreutils gsed mc
 4) Set up your .bash_profile (check the file in this repo for inspiration or as a default). BEWARE, macos doesn't use .bashrc, you need to use .bash_profile
