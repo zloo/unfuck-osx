@@ -15,7 +15,7 @@ Unfuck mice:
 1) There's a tool for that: https://github.com/ther0n/unnaturalscrollwheels - it allows:
   - Inverting horizontal/vertical scrolling
   - Disabling scroll acceleration
-  - Disabling mouse acceleration (this was DRIVING ME INSANE)
+  - Disabling mouse acceleration
 
 Turn off the fucked startup sound:
 1) Click apple icon, System Settings, Sound, Play sound on Startup
@@ -32,22 +32,61 @@ Setup proper environment similar to Linux:
 6) Setup your gitconfig, i.e.
 ```.gitconfig
 [user]
-	email = stefan.safar@nbcuni.com
-	name = Stefan Safar
+	email = personal@gmail.com
+	name = My Name
 [core]
-	excludesfile = /Users/ssr80/.gitignore_global
-[includeIf "gitdir:/Users/ssr80/git/sky/"]
-	path = /Users/ssr80/.gitconfig-sky
-[includeIf "gitdir:/Users/ssr80/git/nbcu/"]
-	path = /Users/ssr80/.gitconfig-nbcu
+	excludesfile = /Users/<username>/.gitignore_global
+[includeIf "gitdir:/Users/<username>/git/work/"]
+	path = /Users/<username>/.gitconfig-work
+[includeIf "gitdir:/Users/<username>/git/personal/"]
+	path = /Users/personal/.gitconfig-personal
 [push]
 	autoSetupRemote = true
 ```
 
-```.gitconfig-sky
+```.gitconfig-work
 [user]
-	name = Stefan Safar
-	email = stefan.safar@sky.uk
+	name = My Work Name
+	email = myworkname@work.com
 [core]
-	sshCommand = ssh -i /Users/ssr80/.ssh/id_ed25519_sky_git -o IdentitiesOnly=yes
+	sshCommand = ssh -i /Users/<username>/.ssh/id_ed25519_work -o IdentitiesOnly=yes
+```
+
+Some useful oneliners:
+```
+# Unhide Library folder
+chflags nohidden "${HOME}/Library/"
+
+# Set login message
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText 'your@email \u2022 +420-XXX-YYY-ZZZ'
+
+# Expand Save dialog by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+
+# Save screenshots in PNG
+defaults write com.apple.screencapture type -string "png"
+defaults write com.apple.screencapture location -string "${HOME}/Downloads"
+
+# Delete unavailable simulators from XCode
+xcrun simctl delete unavailable
+
+function wifi_name {
+        /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | \
+            awk '/ SSID/ { print $2 }'
+    }
+
+alias ldd='otool -L'
+
+alias lockscreen='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+alias plview='plutil -convert xml1 -o -'
+
+alias ql='qlmanage -p'
+
+alias sshot='screencapture -t png -ix ${HOME}/Downloads/sshot.png && ql ${HOME}/Downloads/sshot.png 2>/dev/null'
+
+alias lsusb='system_profiler SPUSBDataType'
 ```
