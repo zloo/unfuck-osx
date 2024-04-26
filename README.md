@@ -8,7 +8,8 @@ Unfuck Keyboard:
    - You can then selectively enable/disable these modifications. It makes HOME/END do beginning/end of line, like a normal OS.
 
 Unfuck Touchpad:
-1) Enable "touch to click" so you won't have to push through the touchpad for every click: Apple logo in top left corner, system settings, trackpad, enable Tap to click
+1) Enable "touch to click" so you won't have to push through the touchpad for every click: Apple logo in top left corner, system settings, trackpad, enable Tap to click.
+2) Install https://github.com/artginzburg/MiddleClick-Sonoma to emulate middle-click with three (or more) fingers tap both on touchpad and Magic Mouse.
 
 Unfuck mice:
 1) There's a tool for that: https://github.com/ther0n/unnaturalscrollwheels - it allows:
