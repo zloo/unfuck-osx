@@ -20,6 +20,10 @@ Unfuck mice:
 Turn off the fucked startup sound:
 1) Click apple icon, System Settings, Sound, Play sound on Startup
 
+Make fucking Apple Music not turn on every time you put on your BT headphones which issue a "resume" command
+1) Download and install https://github.com/tombonez/noTunes and set it up to autostart after boot
+2) This issue only seems to appear after booting. If you manually play something on Spotify, the fucking OSX seems to magically remember you want to use Spotify. If you quit the Spotify app, the fucked behavior returns.. There is no known safe way to REMOVE apple music.
+
 Setup proper environment similar to Linux:
 1) Install iTerm2
   - Configure the Iterm2 / Settings / General / Closing / Quit when all windows are closed. This will close the iTerm2 application so that when you close all the terminal windows, the application will no longer appear in the alt-tab menu option which does NOTHING when you pick it.
