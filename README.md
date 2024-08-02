@@ -17,6 +17,15 @@ Unfuck mice:
   - Disabling scroll acceleration
   - Disabling mouse acceleration
 
+Unfuck display resolution - maybe this is only an issue with 14" Mac but if you don't like one of the few "clear" display resolutions and the other ones are kinda blurry, there is a solution:
+1) Install https://github.com/waydabber/BetterDisplay - It's a paid tool (pro version) but you can use two weeks trial period and there is a non-pro feature you can use to unfuck the display resolution.
+2) In the settings turn these options on:
+   - Edit the system configuration of this display model
+   - Enable flexible scaling
+3) Go to your Mac's Displays settings and pick a few resolutions you'll want to use, note them down.
+4) Go back to BetterDisplay settings and add these into "Custom scaled resolutions" in "Flexible scaling options".
+5) Apply the changes.
+
 Turn off the fucked startup sound:
 1) Click apple icon, System Settings, Sound, Play sound on Startup
 
